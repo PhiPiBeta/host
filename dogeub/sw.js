@@ -1,1 +1,0 @@
-importScripts("q/c.js"),importScripts("q/e.js"),importScripts("q/d.js");const uv=new UVServiceWorker;async function handleRequest(e){return uv.route(e)?await uv.fetch(e):await fetch(e.request)}self.addEventListener("fetch",(e=>{e.respondWith(handleRequest(e))}));
